@@ -1,0 +1,146 @@
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.big-logo {
+  font-size: 30px; }
+
+.small-logo {
+  font-size: 18px; }
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  color: red;
+  font-size: 24px;
+  width: 100%;
+  background-color: #76c7c0;
+  color: white;
+  flex-direction: row;
+  height: 80px;
+  background-image: url(images/back_top-bar.png);
+  background-repeat: repeat-x;
+  background-position: bottom; }
+
+.logo {
+  margin-left: 11.2%; }
+
+.top-bar_list li {
+  display: inline-block; }
+
+.top-bar_menu-row {
+  display: flex;
+  flex-direction: row;
+  margin-left: 13.33333%;
+  width: 52%;
+  font-size: 16px; }
+
+.dropdown-menu {
+  position: absolute; }
+
+.open {
+  display: block; }
+
+.close {
+  display: none; }
+
+.top-bar_menu-item {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6.41026%;
+  width: 17.94872%;
+  padding: 2.5641%;
+  box-sizing: border-box;
+  border-radius: 4px; }
+
+.top-bar_menu-item:hover {
+  background-color: #e8645a;
+  background-image: url("images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: 10% 70%; }
+
+/*.top-bar_menu-item:before {
+    display:none;
+    content: url("images/arrow.png");
+    padding-right: 7px;
+}
+.top-bar_menu-item:hover:before {
+    display:block;
+    position: relative;
+    top: -2px;
+    margin-left: -13px;
+} */
+.top-bar_menu-item:first-child {
+  margin-left: 0; }
+
+/*****************Banner******************************/
+.banner {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  background-color: #7f8c8c;
+  margin-bottom: 25px; }
+
+.banner-logo {
+  font-size: 2.3vw;
+  color: white;
+  background-color: red;
+  border-radius: 3px;
+  font-weight: bold;
+  padding: 0.34602%;
+  margin-bottom: 13px; }
+
+.banner-sublogo {
+  width: 33.33333%;
+  background-color: #3f4646;
+  padding: 10px 2.4%;
+  line-height: 26px;
+  color: white;
+  text-align: center;
+  border-radius: 5px; }
+
+/********* End Banner ****************/
+/*************** Switch line ***************/
+.indicator-switch {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px; }
+
+.stick-switch {
+  margin: auto;
+  display: inline-block;
+  width: 4%;
+  color: #b0b8b9;
+  background-color: #b0b8b9;
+  height: 10px;
+  border: none; }
+
+/*********************subscribe offers ************************/
+.title-offers {
+  display: flex;
+  width: 78%;
+  background-color: #ececec;
+  border-radius: 5px;
+  margin: auto;
+  padding: auto;
+  color: #7f8c8c; }
+
+.title-offers_text-component {
+  width: 70.39249%;
+  margin-left: 2.38908%; }
+
+.title-offers h2 {
+  font-size: 1.38vw; }
+
+.title-offers_button-component {
+  width: 17.09402%;
+  height: 52%;
+  background-color: #e8645a; }
+
+/********************end subscribe offers*********************/
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Sedona </title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="top-bar"> 
+    <div class="logo"> <span class="big-logo">Modus</span><span class="small-logo">versus</span> </div>
+        <div class="top-bar_menu-row">
+            <div class="top-bar_menu-item"> home </div>
+            <div class="top-bar_menu-item"> about </div>
+            <div class="top-bar_menu-item"> services </div>
+            <div class="top-bar_menu-item"> portfolio
+                    <div class="dropdown-menu close"> 
+                        <ul>
+                            <li> Item1 </li>
+                            <li> Item2 </li>
+                            <li> Item3 </li>
+                        </ul>
+                    </div> 
+            </div> 
+            <div class="top-bar_menu-item"> blog </div>
+             <div class="top-bar_menu-item"> features </div>
+             <div class="top-bar_menu-item"> contacts </div>
+    </div>
+</div>
+<div class="banner">
+     <div class="banner-logo"> VESTIBULUM </div>   
+     <div class="banner-sublogo"> Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</div>
+</div>
+<div class="indicator-switch">
+   <hr class="stick-switch">
+   <hr class="stick-switch">
+   <hr class="stick-switch">
+</div>
+<div class="title-offers">
+    
+    <div class="title-offers_text-component">
+            <h2> Some of our top services </h2>
+            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolo </p>
+    </div>
+    <div class="title-offers_button-component">
+        View more
+    </div>   
+</div>
+<script type="text/javascript">
+    var dropdown = document.querySelectorAll('.top-bar_menu-item');
+    var dropdownArray = Array.prototype.slice.call(dropdown, 0);
+    dropdownArray.forEach( function(el) {
+        el.onclick = function() { 
+                        drop = el.querySelector('.dropdown-menu'); 
+                        if(drop) { if(drop.classList.contains('close')) { drop.classList.remove('close'); drop.classList.add('open');}
+                                   else { drop.classList.remove('open'); drop.classList.add('close') }
+                         };
+    }});
+</script>
+</html>
