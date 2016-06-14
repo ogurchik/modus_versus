@@ -6,7 +6,7 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,600' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div class="top-bar"> 
@@ -18,9 +18,9 @@
             <div class="top-bar_menu-item"> portfolio
                     <div class="dropdown-menu close"> 
                         <ul>
-                            <li> Item1 </li>
-                            <li> Item2 </li>
-                            <li> Item3 </li>
+                            <li> Item11 </li>
+                            <li> Item21 </li>
+                            <li> Item31 </li>
                         </ul>
                     </div> 
             </div> 
@@ -39,14 +39,43 @@
    <hr class="stick-switch">
 </div>
 <div class="title-offers">
-    
-    <div class="title-offers_text-component">
-            <h2> Some of our top services </h2>
-            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolo </p>
-    </div>
-    <div class="title-offers_button-component">
-        View more
-    </div>   
+        <div class="centrator">
+                <div class="title-offers_text-component">
+                        <h2> Some of our top services </h2>
+                        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolo </p>
+                </div>
+                <div class="title-offers_button-component">
+                    View more
+                </div>   
+        </div>
+</div>
+<div class="offers">
+   <div class="item-offers"> 
+        <p><img src="images/thumb.png"></p>
+        <p class="offers__title"> suspendisse</p>
+        <p> 
+            Quisque id tellus quis risus vehicula vehicula ut tupis, In eros nulla, placerat vitae at, vehicula ut nunc.
+        </p>
+                <div class="item-offers__button-read-more"> <p>read more</p> </div>
+   </div> 
+   <div class="item-offers">
+                <p><img src="images/Key.png"></p>
+                <p class="offers__title"> maecenas</p>
+                <p> Ut eleifend libero sed neque rhoncus cosequat.Maecenas tincidunt, augue et rutrum condimetium, libero lectus mattis orci, ut commodo.</p>
+                <div class="item-offers__button-read-more"> <p>read more</p> </div>
+  </div> 
+   <div class="item-offers">
+            <p><img src="images/flag.png"></p>
+                <p class="offers__title"> aliquam</p>
+                <p> Vivamus eget ante bibendum arcu vehicula ultricies.Integer venenatis mattis nisl, vitae pulvinar dui tempor non.</p>
+                <div class="item-offers__button-read-more"> <p>read more</p> </div>
+   </div> 
+   <div class="item-offers">  
+       <p><img src="images/flask.png"></p>
+                <p class="offers__title"> aliquam</p>
+                <p> Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non</p>
+                <div class="item-offers__button-read-more"> <p>read more</p> </div>
+   </div> 
 </div>
 <script type="text/javascript">
     var dropdown = document.querySelectorAll('.top-bar_menu-item');
@@ -58,5 +87,11 @@
                                    else { drop.classList.remove('open'); drop.classList.add('close') }
                          };
     }});
+    var arr  = document.querySelectorAll('.item-offers__button-read-more');
+    var arr = Array.prototype.slice.call(arr, 0);
+    for(var i=0; i < arr.length; i++) {
+        arr[i].onmouseover = function() { alert("Catch"); }
+    }
+
 </script>
 </html>

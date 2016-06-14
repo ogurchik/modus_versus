@@ -1,5 +1,50 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
 body {
-  font-family: 'Open Sans', sans-serif; }
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background: #f3f3f3; }
 
 .big-logo {
   font-size: 30px; }
@@ -19,7 +64,8 @@ body {
   height: 80px;
   background-image: url(images/back_top-bar.png);
   background-repeat: repeat-x;
-  background-position: bottom; }
+  background-position: bottom;
+  padding: auto; }
 
 .logo {
   margin-left: 11.2%; }
@@ -32,10 +78,54 @@ body {
   flex-direction: row;
   margin-left: 13.33333%;
   width: 52%;
-  font-size: 16px; }
+  font-size: 1vw; }
 
 .dropdown-menu {
-  position: absolute; }
+  position: absolute;
+  background-color: #e8645a;
+  top: 40px;
+  left: 10px;
+  border-radius: 3px;
+  width: 170.94017%;
+  padding: 8px; }
+
+.dropdown-menu ul li {
+  margin: auto;
+  background: #e5655d;
+  list-style-type: none;
+  border-radius: 3px;
+  padding-left: 30px;
+  border-radius: 3px;
+  background-image: url(images/arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: 15% center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 4px; }
+
+.dropdown-menu ul li:hover {
+  background: #76c7c0; }
+
+.dropdown ul {
+  padding: 8px; }
+
+.dropdown-menu:before {
+  height: 0;
+  width: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px black solid;
+  left: 10px; }
+
+.dropdown-menu:before {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px  #e8645a solid;
+  top: -10px; }
 
 .open {
   display: block; }
@@ -49,34 +139,31 @@ body {
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin-left: 6.41026%;
-  width: 17.94872%;
+  margin-left: 3.84615%;
+  width: 15.38462%;
   padding: 2.5641%;
   box-sizing: border-box;
   border-radius: 4px; }
 
 .top-bar_menu-item:hover {
-  background-color: #e8645a;
-  background-image: url("images/arrow.png");
-  background-repeat: no-repeat;
-  background-position: 10% 70%; }
+  background-color: #e8645a; }
 
-/*.top-bar_menu-item:before {
-    display:none;
-    content: url("images/arrow.png");
-    padding-right: 7px;
-}
+.top-bar_menu-item:before {
+  visibility: hidden;
+  content: url("images/arrow.png");
+  padding-right: 7px; }
+
 .top-bar_menu-item:hover:before {
-    display:block;
-    position: relative;
-    top: -2px;
-    margin-left: -13px;
-} */
+  visibility: visible;
+  position: relative;
+  top: -2px; }
+
 .top-bar_menu-item:first-child {
   margin-left: 0; }
 
 /*****************Banner******************************/
 .banner {
+  width: 100%;
   display: flex;
   flex-direction: column;
   height: 500px;
@@ -122,25 +209,102 @@ body {
 /*********************subscribe offers ************************/
 .title-offers {
   display: flex;
+  align-items: center;
   width: 78%;
   background-color: #ececec;
   border-radius: 5px;
   margin: auto;
   padding: auto;
-  color: #7f8c8c; }
-
-.title-offers_text-component {
-  width: 70.39249%;
-  margin-left: 2.38908%; }
+  color: #7f8c8c;
+  font-size: 13px;
+  margin-bottom: 45px;
+  height: 100px; }
 
 .title-offers h2 {
-  font-size: 1.38vw; }
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 7px; }
+
+.title-offers p {
+  font-size: 13px;
+  line-height: 21px; }
 
 .title-offers_button-component {
   width: 17.09402%;
   height: 52%;
   background-color: #e8645a; }
 
+.title-offers_button-component {
+  border-radius: 4px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  box-shadow: 1px 3px rgba(0, 0, 0, 0.4); }
+
+.centrator {
+  margin: auto;
+  width: 93.16239%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
 /********************end subscribe offers*********************/
+/******************offers*********************************/
+.offers {
+  display: flex;
+  width: 78%;
+  margin: auto;
+  justify-content: space-between;
+  color: #b5bcbc;
+  margin-bottom: 200px; }
+
+.offers p {
+  width: 85.66176%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.offers__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  margin-top: 15px; }
+
+.item-offers {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 23.33333%;
+  background: #f8f8f8;
+  text-align: center;
+  padding-top: 55px;
+  border-radius: 4px;
+  height: 315px;
+  box-shadow: 0px 5px 0px #e5e6e6; }
+
+.item-offers__button-read-more {
+  position: absolute;
+  display: table;
+  top: 90%;
+  left: 12.9629%;
+  background: #76caca;
+  width: 74.07407%;
+  height: 45px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0px 3px 0px #62bdbd; }
+
+.change-to-hover {
+  background: #e8645a;
+  box-shadow: 0px 3px 0px #e8645a; }
+
+.item-offers__button-read-more p {
+  display: table-cell;
+  vertical-align: middle; }
+
+/*****************end-offers*****************************/
 
 /*# sourceMappingURL=style.css.map */
