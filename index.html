@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -87,11 +88,20 @@
                                    else { drop.classList.remove('open'); drop.classList.add('close') }
                          };
     }});
-    var arr  = document.querySelectorAll('.item-offers__button-read-more');
-    var arr = Array.prototype.slice.call(arr, 0);
-    for(var i=0; i < arr.length; i++) {
-        arr[i].onmouseover = function() { alert("Catch"); }
-    }
+    var arr  = document.querySelectorAll(".item-offers");
+    var arr = Array.prototype.slice.call(arr);
+    arr.forEach( function(element, index, arry) {
+        arr[index].onmouseover = function() {
+                var corsica = arr[index].querySelectorAll('.item-offers__button-read-more');
+                corsica[0].style.background="green";
+         }
+        arr[index].onmouseout = function() {
+                var corsica = arr[index].querySelectorAll('.item-offers__button-read-more');
+                corsica[0].style.background="#76caca";
+                    
+        }
+        
+    })
 
 </script>
 </html>
