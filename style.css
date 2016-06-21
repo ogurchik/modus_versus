@@ -404,15 +404,15 @@ body {
 
 .image-window__ind-gear {
   background-image: url(images/industrial-gear.jpeg);
-  background-size: 100% 100%; }
+  background-size: 100% auto; }
 
 .image-window__ind-gear--1 {
   background-image: url(images/industrial-gear1.jpg);
-  background-size: 100% 100%; }
+  background-size: 100% auto; }
 
 .image-window__ind-gear--2 {
   background-image: url(images/industrial-gear2.jpeg);
-  background-size: 100% 100%; }
+  background-size: 100% auto; }
 
 .image-for-browse-window {
   max-width: 100%;
