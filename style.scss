@@ -452,13 +452,40 @@ $field_offer: 1170/1500*100%;
     width: 280/1170*100%;
     vertical-align: top;
 }
+.wrap-for-speedmeter {
+    width: 130/555*100%;
+    height: 60px;
+    position: relative;
+    overflow: hidden;
+}
 .speedmeter_item {
-    width: 125/555*100%;
+    width: 125px;
+    background: transparent;
     height: 125px;
     border-radius: 50%;
-    border: 8px solid;
-    border-left: blue;
-    border-right: red;
+    border: 12px solid;
+    text-align: center;
+    display: table;
+}
+.testimony {
+    position: relative;
+    top: 20px ;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.speedmeter_item:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 125px;
+    height: 125px;
+    border: 12px solid #e2534b;
+    border-radius: 50%;
+    border-right-color: transparent;
+    transform: rotate(-45deg);
+     
 }
 circle {
   fill: #f1f1f1;
