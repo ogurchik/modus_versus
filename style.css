@@ -456,25 +456,37 @@ body {
   display: inline-block;
   width: 48.71795%;
   vertical-align: top;
-  border: 1px solid blue;
   margin-top: 0; }
 
 .infografica p {
   font-size: 13px;
-  line-height: 25px; }
+  line-height: 25px;
+  margin-bottom: 65px; }
 
 .talk-client {
   display: inline-block;
   width: 23.93162%;
   vertical-align: top; }
 
+.speedmeters {
+  display: inline-block; }
+  .speedmeters h2 {
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center; }
+
 .wrap-for-speedmeter {
-  width: 23.42342%;
+  width: 148px;
   height: 60px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-right: 5px;
+  margin-bottom: 25px; }
 
-.speedmeter_item {
+.speedmeters:last-child {
+  margin-right: 0px; }
+
+.speedmeter_item, .speedmeter_item-70, .speedmeter_item-80, .speedmeter_item-100 {
   width: 125px;
   background: transparent;
   height: 125px;
@@ -489,7 +501,19 @@ body {
   font-size: 30px;
   font-weight: bolder; }
 
-.speedmeter_item:after {
+.turn-50, .speedmeter_item:after, .speedmeter_item-70:after, .speedmeter_item-80:after, .speedmeter_item-100:after {
+  transform: rotate(-45deg); }
+
+.turn-70, .speedmeter_item-70:after {
+  transform: rotate(-15deg); }
+
+.turn-80, .speedmeter_item-80:after {
+  transform: rotate(-5deg); }
+
+.turn-100, .speedmeter_item-100:after {
+  transform: rotate(35deg); }
+
+.speedmeter_item:after, .speedmeter_item-70:after, .speedmeter_item-80:after, .speedmeter_item-100:after {
   content: '';
   display: block;
   position: absolute;
@@ -499,8 +523,7 @@ body {
   height: 125px;
   border: 12px solid #e2534b;
   border-radius: 50%;
-  border-right-color: transparent;
-  transform: rotate(-45deg); }
+  border-right-color: transparent; }
 
 circle {
   fill: #f1f1f1;

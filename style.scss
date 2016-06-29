@@ -440,23 +440,36 @@ $field_offer: 1170/1500*100%;
     display: inline-block;
     width: 570/1170*100%;
     vertical-align: top;
-    border: 1px solid blue;
     margin-top: 0;
 }
 .infografica p {
     font-size: 13px;
     line-height: 25px;
+    margin-bottom: 65px;
 }
 .talk-client {
     display: inline-block;
     width: 280/1170*100%;
     vertical-align: top;
 }
+.speedmeters {
+    display: inline-block;
+    h2 {
+        font-size: 16px;
+        font-weight: 800;
+        text-align: center;
+    }
+}
 .wrap-for-speedmeter {
-    width: 130/555*100%;
+    width: 148px;
     height: 60px;
     position: relative;
     overflow: hidden;
+    margin-right: 5px;
+    margin-bottom: 25px;
+}
+.speedmeters:last-child {
+    margin-right:0px;
 }
 .speedmeter_item {
     width: 125px;
@@ -473,6 +486,18 @@ $field_offer: 1170/1500*100%;
     font-size: 30px;
     font-weight: bolder;
 }
+.turn-50 {
+    transform: rotate(-45deg);
+}
+.turn-70 {
+    transform: rotate(-15deg);
+}
+.turn-80 {
+    transform: rotate(-5deg);
+}
+.turn-100 {
+    transform: rotate(35deg);
+}
 .speedmeter_item:after {
     content: '';
     display: block;
@@ -484,8 +509,28 @@ $field_offer: 1170/1500*100%;
     border: 12px solid #e2534b;
     border-radius: 50%;
     border-right-color: transparent;
-    transform: rotate(-45deg);
-     
+    @extend .turn-50;
+}
+.speedmeter_item-70 {
+    @extend .speedmeter_item;
+}
+.speedmeter_item-70:after {
+    @extend .speedmeter_item:after;
+    @extend  .turn-70; 
+}
+.speedmeter_item-80 {
+    @extend .speedmeter_item;
+}
+.speedmeter_item-80:after {
+    @extend .speedmeter_item:after;
+    @extend  .turn-80; 
+}
+.speedmeter_item-100 {
+    @extend .speedmeter_item;
+}
+.speedmeter_item-100:after {
+    @extend .speedmeter_item:after;
+    @extend  .turn-100; 
 }
 circle {
   fill: #f1f1f1;
