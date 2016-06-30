@@ -532,6 +532,41 @@ $field_offer: 1170/1500*100%;
     @extend .speedmeter_item:after;
     @extend  .turn-100; 
 }
+.said {
+    position: relative;
+    width: 100%;
+    background: white;
+    border-radius: 4px;
+    padding: 20/280*100%;
+}
+.said:after{
+    ccontent:'';
+    position:absolute;
+    width:0;
+    height: 0;
+    top: 100%;
+    border-left: 20px solid transparent;
+  border-right: 20px solid red;
+  border-bottom: 20px solid transparent;  
+  
+  }
+.gad {
+    position: relative;
+    width:100%;
+    background: red;
+    border-radius: 5px;
+}
+.gad:after {
+    content:'';
+    position:absolute;
+    width:0;
+    height: 0;
+    top: 100%;
+    border-left: 20px solid transparent;
+  border-right: 20px solid red;
+  
+  border-bottom: 20px solid transparent;  
+}
 circle {
   fill: #f1f1f1;
   stroke: green;

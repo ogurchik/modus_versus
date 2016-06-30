@@ -525,6 +525,39 @@ body {
   border-radius: 50%;
   border-right-color: transparent; }
 
+.said {
+  position: relative;
+  width: 100%;
+  background: white;
+  border-radius: 4px;
+  padding: 7.14286%; }
+
+.said:after {
+  ccontent: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 100%;
+  border-left: 20px solid transparent;
+  border-right: 20px solid red;
+  border-bottom: 20px solid transparent; }
+
+.gad {
+  position: relative;
+  width: 100%;
+  background: red;
+  border-radius: 5px; }
+
+.gad:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 100%;
+  border-left: 20px solid transparent;
+  border-right: 20px solid red;
+  border-bottom: 20px solid transparent; }
+
 circle {
   fill: #f1f1f1;
   stroke: green;
