@@ -404,8 +404,8 @@ $field_offer: 1170/1500*100%;
 .our-advantages {
        width: $field-offer;
     margin: auto;
-    height: 300px;
     vertical-align: top;
+    margin-bottom: 90px;
 }
 .advantages-list__caption {
     color: #f3f3f3;
@@ -569,8 +569,39 @@ $field_offer: 1170/1500*100%;
     font-weight: 600;
     color: #777777;
 }
-
-
+.list-happy-client {
+    width: $field-offer;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 600;
+    color: #777777;
+    height: 40px;
+    vertical-align: middle;
+}
+.list-happy-client h3 {
+    display: inline-block;
+    margin-right: 17px/$field-offer*100%;
+}
+.long-stick {
+        display: inline-block;
+        height: 3px;    
+        width: 300px;
+        background: #777777;
+        vertical-align: middle; 
+        width: 890/1170*100%;
+}
+.button-switch-happy-clients {
+        display: inline-block;
+}
+.offset-long-stick {
+        display:inline-block;
+        vertical-align: middle; 
+        background: #777777;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-right: -5px
+}
 circle {
   fill: #f1f1f1;
   stroke: green;

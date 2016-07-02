@@ -420,8 +420,8 @@ body {
 .our-advantages {
   width: 78%;
   margin: auto;
-  height: 300px;
-  vertical-align: top; }
+  vertical-align: top;
+  margin-bottom: 90px; }
 
 .advantages-list__caption {
   color: #f3f3f3; }
@@ -561,6 +561,39 @@ body {
   font-size: 16px;
   font-weight: 600;
   color: #777777; }
+
+.list-happy-client {
+  width: 78%;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 600;
+  color: #777777;
+  height: 40px;
+  vertical-align: middle; }
+
+.list-happy-client h3 {
+  display: inline-block;
+  margin-right: 21.79487px; }
+
+.long-stick {
+  display: inline-block;
+  height: 3px;
+  width: 300px;
+  background: #777777;
+  vertical-align: middle;
+  width: 76.06838%; }
+
+.button-switch-happy-clients {
+  display: inline-block; }
+
+.offset-long-stick {
+  display: inline-block;
+  vertical-align: middle;
+  background: #777777;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: -5px; }
 
 circle {
   fill: #f1f1f1;
