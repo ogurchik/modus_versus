@@ -570,6 +570,7 @@ $field_offer: 1170/1500*100%;
     color: #777777;
 }
 .list-happy-client {
+    display: table;
     width: $field-offer;
     margin: auto;
     font-size: 16px;
@@ -577,6 +578,7 @@ $field_offer: 1170/1500*100%;
     color: #777777;
     height: 40px;
     vertical-align: middle;
+    margin-bottom: 100px;
 }
 .list-happy-client h3 {
     display: inline-block;
@@ -586,22 +588,64 @@ $field_offer: 1170/1500*100%;
         display: inline-block;
         height: 3px;    
         width: 300px;
-        background: #777777;
+        background: #e1e2e2;
         vertical-align: middle; 
-        width: 890/1170*100%;
+        width: 780/1170*100%;
 }
 .button-switch-happy-clients {
         display: inline-block;
+        display: table-cell;
+        vertical-align: middle;
 }
 .offset-long-stick {
         display:inline-block;
         vertical-align: middle; 
-        background: #777777;
+        background: #e1e2e2;
         width: 8px;
         height: 8px;
         border-radius: 50%;
         margin-right: -5px
 }
+.button-switch-happy-clients {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background: #98a3a3;
+    background-image: url(images/big-arrow-left.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    box-shadow: 0.5px 3px;
+}
+
+.button-switch-happy-clients:hover {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background: red;
+    background-image: url(images/big-arrow-left.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    box-shadow: 0.5px 3px;
+
+}
+
+ .button-switch-happy-clients:last-child {
+   @extend  .button-switch-happy-clients;
+    background-image: url(images/big-arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+ .button-switch-happy-clients:last-child:hover {
+    @extend  .button-switch-happy-clients;
+    background: red; 
+    background-image: url(images/big-arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+   }   
+
 circle {
   fill: #f1f1f1;
   stroke: green;
