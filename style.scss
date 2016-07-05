@@ -578,7 +578,7 @@ $field_offer: 1170/1500*100%;
     color: #777777;
     height: 40px;
     vertical-align: middle;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 .list-happy-client h3 {
     display: inline-block;
@@ -643,9 +643,18 @@ $field_offer: 1170/1500*100%;
     background-image: url(images/big-arrow-right.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-
    }   
-
+.windows-for-jquery {
+    width: $field-offer;
+}
+.block-jquery {
+    width: 170/1170*100%;
+    background: white;
+    border-radius: 4px;
+    height: 90px;
+    display: inline-block;
+    margin-right: 30/1170*100%;
+}
 circle {
   fill: #f1f1f1;
   stroke: green;
