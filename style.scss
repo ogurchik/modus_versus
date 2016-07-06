@@ -646,6 +646,9 @@ $field_offer: 1170/1500*100%;
    }   
 .windows-for-jquery {
     width: $field-offer;
+    margin: auto;
+    border: 1px solid blue;
+    margin-bottom: 50px;
 }
 .block-jquery {
     width: 170/1170*100%;
@@ -655,6 +658,18 @@ $field_offer: 1170/1500*100%;
     display: inline-block;
     margin-right: 30/1170*100%;
 }
+.block-jquery:last-child {
+        margin-right: 0px;
+}
+.footer {
+    width: 100%;
+} 
+.footer-content {
+    width: $field-offer;
+    margin: auto;
+    border: 1px solid blue;
+    margin-bottom: 50px;
+} 
 circle {
   fill: #f1f1f1;
   stroke: green;

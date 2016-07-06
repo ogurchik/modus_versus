@@ -571,7 +571,7 @@ body {
   color: #777777;
   height: 40px;
   vertical-align: middle;
-  margin-bottom: 100px; }
+  margin-bottom: 40px; }
 
 .list-happy-client h3 {
   display: inline-block;
@@ -631,6 +631,32 @@ body {
   background-image: url(images/big-arrow-right.png);
   background-repeat: no-repeat;
   background-position: 50% 50%; }
+
+.windows-for-jquery {
+  width: 78%;
+  margin: auto;
+  border: 1px solid blue;
+  margin-bottom: 50px; }
+
+.block-jquery {
+  width: 14.52991%;
+  background: white;
+  border-radius: 4px;
+  height: 90px;
+  display: inline-block;
+  margin-right: 2.5641%; }
+
+.block-jquery:last-child {
+  margin-right: 0px; }
+
+.footer {
+  width: 100%; }
+
+.footer-content {
+  width: 78%;
+  margin: auto;
+  border: 1px solid blue;
+  margin-bottom: 50px; }
 
 circle {
   fill: #f1f1f1;
