@@ -678,7 +678,8 @@ body {
   margin-bottom: 50px; }
 
 .footer-content__telefon {
-  width: 31.19658%; }
+  width: 31.19658%;
+  display: inline-block; }
 
 .footer-content__telefon h2 {
   font-size: 25px;
@@ -694,11 +695,40 @@ body {
   line-height: 25px; }
 
 .footer-content__telefon--phone {
+  font-weight: 600;
+  width: 100%;
+  vertical-align: middle;
   font-size: 20px;
-  line-height: 36px; }
+  line-height: 36px;
+  display: table; }
 
 .footer-content__telefon--phone span {
-  font-size: 13px; }
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 13px;
+  padding-right: 25px; }
+
+.footer-content__telefon--email span {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 13px;
+  padding-right: 25px; }
+
+.footer-content__telefon--email {
+  max-width: 100%;
+  vertical-align: middle;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 36px;
+  border: 1px solid blue;
+  display: table; }
+
+.footer-content__about-company {
+  width: 14.52991%;
+  display: inline-block;
+  border: 1px dotted black;
+  margin-left: 3%;
+  margin-top: 0; }
 
 circle {
   fill: #f1f1f1;
