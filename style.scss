@@ -691,7 +691,6 @@ $field_offer: 1170/1500*100%;
     width: $field-offer;
     margin: auto;
     border: 1px solid blue;
-    margin-bottom: 50px;
 } 
 .footer-content__telefon {
             width: 365/1170*100%;
@@ -744,10 +743,10 @@ $field_offer: 1170/1500*100%;
     width: 170/1170*100%;
     display: inline-block;
     display: relative;
+    margin-left: 1%;
     top: 30px;
-    border: 1px dotted black;
-    margin-left:3%;
    color: white;
+    border: 1px solid white;
 }
 .footer-content__about-company a {
 		text-decoration: none;
@@ -770,6 +769,57 @@ $field_offer: 1170/1500*100%;
 }
 .footer-content__community {
 		@extend .footer-content__about-company;
+}
+.footer-content__from-blog {
+    display: inline-block;
+    width: 360/1170*100%;
+    border: 1px solid green;
+        vertical-align: top;
+    color: white;
+    margin-left: 2%;
+}
+.footer-content__from-blog  h2{
+    font-size: 20px;
+    font-weight: 600;
+        	margin-bottom: 35px;
+    line-height: 40px;
+}
+.span-for-blog {
+    font-size: 16px;
+    font-style: italic;
+}
+.item-from-blog__text-block {
+    vertical-align:top;
+    display: inline-block;
+    font-size: 13px;
+    margin-left: 2%;
+    width: 249/340*100%;
+    margin-bottom: 20px; } .item-from-blog__image {
+    display: inline-block;
+}
+.quote-from-blog {
+    margin-bottom: 15px;
+}
+.date-publication-quote {
+    color: grey;
+}
+.copyright {
+    background: #6ab3ac;
+}
+.copyright-content {
+    width: $field_offer;
+    margin: auto;
+}
+.copyright-content__left-side {
+    display: inline-block;
+    border: 1px solid white;
+    width: 49%;
+}
+.copyright-content__right-side {
+    display: inline-block;
+    border: 1px solid white;
+    width: 49%;
+    text-align: right;
 }
 circle {
   fill: #f1f1f1;

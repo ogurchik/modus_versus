@@ -677,8 +677,7 @@ body {
 .footer-content {
   width: 78%;
   margin: auto;
-  border: 1px solid blue;
-  margin-bottom: 50px; }
+  border: 1px solid blue; }
 
 .footer-content__telefon {
   width: 31.19658%;
@@ -731,10 +730,10 @@ body {
   width: 14.52991%;
   display: inline-block;
   display: relative;
+  margin-left: 1%;
   top: 30px;
-  border: 1px dotted black;
-  margin-left: 3%;
-  color: white; }
+  color: white;
+  border: 1px solid white; }
 
 .footer-content__about-company a, .footer-content__community a {
   text-decoration: none;
@@ -752,6 +751,59 @@ body {
   font-weight: 600;
   color: #4c847f;
   margin-bottom: 35px; }
+
+.footer-content__from-blog {
+  display: inline-block;
+  width: 30.76923%;
+  border: 1px solid green;
+  vertical-align: top;
+  color: white;
+  margin-left: 2%; }
+
+.footer-content__from-blog h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  line-height: 40px; }
+
+.span-for-blog {
+  font-size: 16px;
+  font-style: italic; }
+
+.item-from-blog__text-block {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 13px;
+  margin-left: 2%;
+  width: 73.23529%;
+  margin-bottom: 20px; }
+
+.item-from-blog__image {
+  display: inline-block; }
+
+.quote-from-blog {
+  margin-bottom: 15px; }
+
+.date-publication-quote {
+  color: grey; }
+
+.copyright {
+  background: #6ab3ac; }
+
+.copyright-content {
+  width: 78%;
+  margin: auto; }
+
+.copyright-content__left-side {
+  display: inline-block;
+  border: 1px solid white;
+  width: 49%; }
+
+.copyright-content__right-side {
+  display: inline-block;
+  border: 1px solid white;
+  width: 49%;
+  text-align: right; }
 
 circle {
   fill: #f1f1f1;
