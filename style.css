@@ -164,6 +164,7 @@ body {
   color: inherit;
   width: 100%;
   display: flex;
+  position: relative;
   flex-direction: column;
   height: 500px;
   align-items: center;
@@ -188,6 +189,29 @@ body {
   color: white;
   text-align: center;
   border-radius: 5px; }
+
+.button-switch-slide, .button-switch-slide__preview, .button-switch-slide__next {
+  position: absolute;
+  top: 50%;
+  height: 60px;
+  width: 50px;
+  background: red; }
+
+.button-switch-slide__preview {
+  left: 0; }
+
+.button-switch-slide__next {
+  right: 0; }
+
+.slides {
+  position: absolute;
+  opacity: 0;
+  left: 30%;
+  top: 50%;
+  transition: opacity 3s; }
+
+.showing {
+  opacity: 1; }
 
 /********* End Banner ****************/
 /*************** Switch line ***************/
