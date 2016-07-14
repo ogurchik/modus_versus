@@ -166,7 +166,12 @@ body {
 .button-switch-slide__next {
     @extend .button-switch-slide ;
     right: 0;
+    text-align: center;
+    vertical-align: middle;
     }
+.image-in-center {
+	vertical-align: middle;
+}
 .slides {
     position: absolute;
     opacity: 0;

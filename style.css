@@ -201,7 +201,12 @@ body {
   left: 0; }
 
 .button-switch-slide__next {
-  right: 0; }
+  right: 0;
+  text-align: center;
+  vertical-align: middle; }
+
+.image-in-center {
+  vertical-align: middle; }
 
 .slides {
   position: absolute;
