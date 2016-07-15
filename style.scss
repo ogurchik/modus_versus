@@ -168,9 +168,11 @@ body {
     right: 0;
     text-align: center;
     vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 .image-in-center {
-	vertical-align: middle;
 }
 .slides {
     position: absolute;
