@@ -79,6 +79,7 @@ body {
 
 .dropdown-menu {
   position: absolute;
+  z-index: 1000;
   background-color: #e8645a;
   top: 40px;
   left: 10px;
@@ -173,6 +174,8 @@ body {
   margin-bottom: 25px; }
 
 .banner-logo {
+  width: 45.33333%;
+  margin: auto;
   font-size: 2.3vw;
   color: white;
   background-color: red;
@@ -182,7 +185,8 @@ body {
   margin-bottom: 13px; }
 
 .banner-sublogo {
-  width: 33.33333%;
+  width: 62.66667%;
+  margin: auto;
   background-color: #3f4646;
   padding: 10px 2.4%;
   line-height: 26px;
@@ -195,25 +199,31 @@ body {
   top: 50%;
   height: 60px;
   width: 50px;
-  background: red; }
-
-.button-switch-slide__preview {
-  left: 0; }
-
-.button-switch-slide__next {
-  right: 0;
+  background: red;
   text-align: center;
   vertical-align: middle;
   display: flex;
   justify-content: center;
   align-items: center; }
 
+.button-switch-slide__preview {
+  left: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+.button-switch-slide__next {
+  right: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; }
+
 .slides {
+  width: 50%;
+  left: 25%;
+  top: 50%;
   position: absolute;
   opacity: 0;
-  left: 30%;
-  top: 50%;
-  transition: opacity 3s; }
+  transition: opacity 1s;
+  text-align: center; }
 
 .showing {
   opacity: 1; }
