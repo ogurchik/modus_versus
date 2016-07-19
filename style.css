@@ -96,7 +96,7 @@ body {
   border-radius: 3px;
   background-image: url(images/arrow-right.png);
   background-repeat: no-repeat;
-  background-position: 15% center;
+  background-position: 7% center;
   padding-top: 8px;
   padding-bottom: 8px;
   margin-bottom: 4px; }
@@ -676,7 +676,6 @@ body {
 .windows-for-jquery {
   width: 78%;
   margin: auto;
-  border: 1px solid blue;
   margin-bottom: 50px; }
 
 .block-jquery {
@@ -715,8 +714,7 @@ body {
 
 .footer-content {
   width: 78%;
-  margin: auto;
-  border: 1px solid blue; }
+  margin: auto; }
 
 .footer-content__telefon {
   width: 31.19658%;
@@ -760,9 +758,7 @@ body {
   vertical-align: middle;
   font-weight: 600;
   font-size: 20px;
-  line-height: 36px;
-  border: 1px solid blue;
-  display: table; }
+  line-height: 36px; }
 
 .footer-content__about-company, .footer-content__community {
   vertical-align: top;
@@ -771,8 +767,7 @@ body {
   display: relative;
   margin-left: 1%;
   top: 30px;
-  color: white;
-  border: 1px solid white; }
+  color: white; }
 
 .footer-content__about-company a, .footer-content__community a {
   text-decoration: none;
@@ -794,7 +789,6 @@ body {
 .footer-content__from-blog {
   display: inline-block;
   width: 30.76923%;
-  border: 1px solid green;
   vertical-align: top;
   color: white;
   margin-left: 2%; }
@@ -835,12 +829,14 @@ body {
 
 .copyright-content__left-side {
   display: inline-block;
-  border: 1px solid white;
+  color: white;
   width: 49%; }
+
+.copyright-content__right-side img {
+  margin-left: 4%; }
 
 .copyright-content__right-side {
   display: inline-block;
-  border: 1px solid white;
   width: 49%;
   text-align: right; }
 

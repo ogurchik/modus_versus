@@ -57,7 +57,7 @@ body {
     border-radius: 3px;
     background-image: url(images/arrow-right.png);
     background-repeat: no-repeat;
-    background-position: 15% center;
+    background-position: 7% center;
     padding-top: 8px;
     padding-bottom:8px;
     margin-bottom: 4px;
@@ -693,7 +693,6 @@ transform: rotate(35deg);
 .windows-for-jquery {
     width: $field-offer;
     margin: auto;
-    border: 1px solid blue;
     margin-bottom: 50px;
 }
 .block-jquery {
@@ -734,7 +733,6 @@ transform: rotate(35deg);
 .footer-content {
     width: $field-offer;
     margin: auto;
-    border: 1px solid blue;
 } 
 .footer-content__telefon {
             width: 365/1170*100%;
@@ -779,8 +777,6 @@ transform: rotate(35deg);
         font-weight: 600;
         font-size: 20px;
         line-height: 36px;
-        border: 1px solid blue;
-        display: table;
 }
 .footer-content__about-company {
 	vertical-align: top;
@@ -790,7 +786,6 @@ transform: rotate(35deg);
     margin-left: 1%;
     top: 30px;
    color: white;
-    border: 1px solid white;
 }
 .footer-content__about-company a {
 		text-decoration: none;
@@ -817,7 +812,6 @@ transform: rotate(35deg);
 .footer-content__from-blog {
     display: inline-block;
     width: 360/1170*100%;
-    border: 1px solid green;
         vertical-align: top;
     color: white;
     margin-left: 2%;
@@ -856,12 +850,14 @@ transform: rotate(35deg);
 }
 .copyright-content__left-side {
     display: inline-block;
-    border: 1px solid white;
+    color: white;
     width: 49%;
+}
+.copyright-content__right-side img {
+	margin-left: 4%;
 }
 .copyright-content__right-side {
     display: inline-block;
-    border: 1px solid white;
     width: 49%;
     text-align: right;
 }
